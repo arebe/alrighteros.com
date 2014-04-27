@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* css for the main app */
+body{
+	margin: 0 auto 1em auto;
+	background-color: #000000;
+	background-image:url('../images/eros_sil.jpg');
+}
+
+header {
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	padding-left: 10px;
+	padding-right: 25px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-radius: 5px;
+	margin:0 auto 0 auto;
+}
+header h1, h2 {
+	letter-spacing: 0.6em;
+	margin: 0.8em 0.2em;
+}
+body {
+	background-color: #2D2C30;
+	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	color: #C0C0C0;
+	width: 1200px;
+	/* keeps everything in this tag centered in window */
+	/* Top Right Bottom Left */
+	margin:0 auto 1em auto; 
+}
+footer {
+	color: #C0C0CA;
+    font-weight: 600;
+	font-size: smaller;
+	padding-left: 5px;
+	padding-right: 25px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	border-radius: 5px;
+	clear: both;
+	opacity:0.3;
+	filter:alpha(opacity=30); /* For IE8 and earlier */
+}
+
+time{
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	font-size: 10pt;
+	color: grey;
+}
+
+/* LVHA */
+a:link {color: #6699CC; text-decoration: none}
+a:visited {color: #6699CC }
+a:hover {color:#7A3DB8}
+header a:hover{color: #6699CC}
+aside h3 {letter-spacing:normal}
+nav {
+	margin: 0.5em auto;
+	width: 900px;
+	backgroud-color: #000000;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+nav li{
+	float: left;
+
+}
+nav a:link, nav a:visited{
+	text-decoration: none;
+	padding-left: 25px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	display: block;
+	height: 20px;
+	width: 110px;
+	margin: 0 auto 0 auto;
+}
+nav a:hover {
+	color:#f3f1fa; 
+	border-radius: 5px;
+}
+
+#nav_current{
+	background-color: #2b2834;
+}
+
+article{
+	padding-top: 0.1em;
+	clear: both;
+}
+
+/* Classes */
+.error{
+	color: red;
+}
+
+.pano_photo{
+	background: #000000;
+    width: device-width;
+}	
+
+.no_photo{
+	color: grey;
+}
+
+.wide_text{
+	width: 80%;
+}
+
+.tall_text{
+	width: 80%;
+	height: 100px;
+}
+
+/* Landing page */
+
+h4.landing{
+	margin: -0.6em auto 0.5em 3em;
+}
+
+article.landing{
+	background-size: 900px 600px;
+	width: 900px;
+	height: 300px;
+}
+
+div.welcomebox{
+	width: 600px;
+	height:230px;
+	margin: 30px 50px 75px;
+	background-color:#ffffff;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+div.welcomebox p, ul{
+	margin: 1em;
+	color: #000000;
+}
+
+span.new{
+	color: red;
+}
+
+/* posts_index page */
+h1.posts_index{
+	font-size: 14pt;
+}
+
+span.post_user{
+	color:  #bf8040;
+}
+
+div.posts_box{
+	width: 900px;
+	height: 150px;
+	background-color:#2b2834;
+	border: dotted #001A33  0.2px;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+div.posts_box p, h1, time, form{
+	margin: 0.5em 1em;
+}
+
+div.posts_thumbnail{
+	border: 0px;
+	float: right;
+	margin: auto 1.3em auto;
+	padding: 10px;
+}
+
+/* posts_view page */
+div.posts_comment h1{
+	font-size: 14pt;
+}
+
+div.posts_comment p, h1, form{
+	margin: 0.2em 1em;
+}
+
+div.posts_view time{
+	float: right;
+	margin: 1em 1.5em;
+}
+
+span.comment_user{
+	color:  #bf8040;
+}
+
+div.comment_box{
+	width: 750px;
+	height: 100px;
+	margin:0 auto 1em auto; 
+	background-color:#2b2834;
+	border: dotted #001A33  0.2px;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+/* users_profile page */
+#profile_posts{
+	width: 30%;
+	min-width: 320px;
+	float: right;
+	position: relative;
+}
+
+div.profile_posts_box{
+	width: 320px;
+	height: 140px;
+	background-color:#2b2834;
+	border: dotted #001A33  0.2px;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+div.profile_posts_thumbnail{
+	float: left;
+	padding: 10px;
+}
+
+form.display_button{
+	display: block;
+}
+
+form.no_button{
+	display: none;
+}

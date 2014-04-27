@@ -1,21 +1,7 @@
-/** General **/
-header{
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	color: #EFF2FB;
-	font-weight: 700;
-	letter-spacing: 0.6em;
-	margin: 2em 0.2em;
-	padding-left: 10px;
-	padding-right: 500px;
-	padding-top: 100px;
-	padding-bottom: 1px;
-	border-radius: 5px;
-	text-align: center;
-}
+/** css for main.js features **/
 
-body{
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
-	margin: 0 auto 1em auto;
-	background-color: #000000;
-	background-image:url('../images/eros_sil.jpg');
+/* v_users_signup validation */
+#first_name_error, #last_name_error, #email_error, #password_error, #photo_url_error{
+	color: red;
+	display: none;
 }
