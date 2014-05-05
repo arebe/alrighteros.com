@@ -44,6 +44,7 @@ class users_controller extends base_controller {
 	  $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
 	  $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 	  $_POST['profile_pic'] = "/uploads/avatars/example.gif";
+	  $_POST['hacked_pic'] = "/uploads/avatars/YouDidntSayTheMagicWord.gif";
 	  $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
 	  // automatically follow self
 	  $data = Array(
@@ -175,6 +176,8 @@ class users_controller extends base_controller {
         # Setup view
             $this->template->content = View::instance('v_users_chat');
             $this->template->title   = "Chat with Virtual Companion";
+            $this->template->content->user_name = $this->user->user_name;
+            $this->template->content->profile_pic = $this->user->profile_pic;
 			$this->template->content->error = $error;
 
         # Render template
@@ -182,8 +185,27 @@ class users_controller extends base_controller {
 
     }
 	public function p_chat(){
+	  Router::redirect('/users/hacked/'.$this->user->user_id);
+    }
+
+    public function hacked($error = NULL) {
+
+        # Setup view
+            $this->template->content = View::instance('v_users_hacked');
+            $this->template->title = "Profile of ".$this->user->user_name;
+            $this->template->content->user_name = $this->user->user_name;
+            $this->template->content->hacked_pic = $this->user->hacked_pic;
+			$this->template->content->error = $error;
+
+        # Render template
+            echo $this->template;
+
+    }
+	public function p_hacked(){
 	  Router::redirect('/users/warning/'.$this->user->user_id);
     }
+
+
 
     public function warning($error = NULL) {
 
