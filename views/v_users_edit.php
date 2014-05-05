@@ -1,13 +1,9 @@
 <form method='POST' action='/users/p_update'>
-   Email / login: <?=$email?>
+   Username / login: <span class="post_user"><?=$user_name?></span>
 	<br><br>
 
-   First name: <?=$first_name?><br>
-   Change first name to: <input type='text' name='first_name'>
-	<br><br>
-
-   Last name: <?=$last_name?></br>
-   Change last name to: <input type='text' name='last_name'>
+   Email: <?=$email?><br>
+   Change email to: <input type='text' name='email'>
 	<br><br>
 
    Change password: <input type='password' name='password'>

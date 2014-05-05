@@ -1,7 +1,7 @@
 <form method='POST' action='/users/p_signup'>
    <?php if($error=="blank"): ?>
 		<div class='error'>
-		   Sign up failed. Please supply a valid email and password.
+		   Sign up failed. Please supply a valid user name, email, and password.
 		</div>
 		<br>
    <?php endif; ?>
@@ -13,14 +13,9 @@
 		<br>
    <?php endif; ?>
 
-    First Name<br>
-    <input type='text' name='first_name'>
-    <div id='first_name_error'>Please enter first name (30 char max).</div> 
-    <br><br>
-
-    Last Name<br>
-    <input type='text' name='last_name'>
-    <div id='last_name_error'>Please enter last name (30 char max).</div> 
+    Username<br>
+    <input type='text' name='user_name'>
+    <div id='user_name_error'>Please enter user name (30 char max).</div> 
     <br><br>
 
     Email<br>

@@ -19,13 +19,21 @@ class users_controller extends base_controller {
 
     public function p_signup() {
 	  // check for empty fields
-	  if(empty($_POST['email']) || empty($_POST['password'])):
+	  if(empty($_POST['email']) || empty($_POST['password']) || empty($_POST['user_name'])):
 		Router::redirect("/users/signup/blank");
 	  endif;
 	  // check for duplicate email in db
 	  $q = "SELECT user_id
 		FROM users
 		WHERE email = '".$_POST['email']."'";
+	  $user_id = DB::instance(DB_NAME)->select_field($q);
+	  if($user_id):
+		Router::redirect("/users/signup/duplicate");
+	  endif;
+	  // check duplicate user name in db
+	  $q = "SELECT user_id
+		FROM users
+		WHERE user_name = '".$_POST['user_name']."'";
 	  $user_id = DB::instance(DB_NAME)->select_field($q);
 	  if($user_id):
 		Router::redirect("/users/signup/duplicate");
@@ -43,7 +51,6 @@ class users_controller extends base_controller {
 			  "user_id" => $user_id, 
 			  "user_id_followed" => $user_id
 			  );
-	  DB::instance(DB_NAME)->insert('users_users', $data);
 	  Router::redirect("/users/login");
     }
 
@@ -72,7 +79,7 @@ class users_controller extends base_controller {
 	  }
 	  else {
 		setcookie("token", $token, strtotime('+1 year'), '/');
-		Router::redirect("/posts/index");
+		Router::redirect("/index");
 	  }
 	}
 	
@@ -98,10 +105,9 @@ class users_controller extends base_controller {
 	  $profile_user = DB::instance(DB_NAME)->select_row($q);
 	  $profile_pic = $profile_user['profile_pic'];
 	  $this->template->content = View::instance('v_users_profile');
-	  $this->template->content->first_name = $profile_user['first_name'];
-	  $this->template->content->last_name = $profile_user['last_name'];
+	  $this->template->content->user_name = $profile_user['user_name'];
 	  $this->template->content->profile_pic = $profile_pic;
-	  $this->template->title = "Profile of ".$profile_user['first_name'];
+	  $this->template->title = "Profile of ".$profile_user['user_name'];
 
 	  // if this is the profile for the logged in user, show "edit profile" button
 	  if($this->user->user_id == $profile_user_id):
@@ -109,23 +115,6 @@ class users_controller extends base_controller {
 	  else:
 		$this->template->content->edit_profile = 'no_button';
 	  endif;
-
-	  // query db for list of 5 recent posts by this user
-	  $q = 'SELECT 
-				post_id,
-			    content,
-				photo_url,
-				created,
-	            user_id
-	        FROM posts
-			WHERE user_id = '.$profile_user_id.'
-			ORDER BY created DESC
-			LIMIT 5';
-      // run query
-	  $posts = DB::instance(DB_NAME)->select_rows($q);
-      // pass data to view
-	  $this->template->content->posts = $posts;
-	  //	  	  echo print_r( $profile_pic);	  
       echo $this->template;
 	}
 	
@@ -136,8 +125,7 @@ class users_controller extends base_controller {
 	  $this->template->content = View::instance('v_users_edit');
 	  $this->template->title = "Edit profile";
 	  $this->template->content->email = $this->user->email;
-	  $this->template->content->first_name = $this->user->first_name;
-	  $this->template->content->last_name = $this->user->last_name;
+	  $this->template->content->user_name = $this->user->user_name;
 	  echo $this->template;
 	}
 
@@ -152,14 +140,8 @@ class users_controller extends base_controller {
 
 	public function p_update(){
 	  // update first name, if one is entered
-	  if($_POST['first_name']):
-		$data = Array("first_name" => $_POST['first_name']);
-		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
-	  endif;
-
-	  // update last name, if one is entered
-	  if($_POST['last_name']):
-		$data = Array("last_name" => $_POST['last_name']);
+	  if($_POST['email']):
+		$data = Array("email" => $_POST['email']);
 		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
 	  endif;
 
@@ -170,6 +152,21 @@ class users_controller extends base_controller {
 		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
 	  endif;
 
+	  Router::redirect('/users/profile/'.$this->user->user_id);
+    }
+
+     public function upgrade($error = NULL) {
+
+        # Setup view
+            $this->template->content = View::instance('v_users_upgrade');
+            $this->template->title   = "Sign Up";
+			$this->template->content->error = $error;
+
+        # Render template
+            echo $this->template;
+
+    }
+	public function p_upgrade(){
 	  Router::redirect('/users/profile/'.$this->user->user_id);
     }
 

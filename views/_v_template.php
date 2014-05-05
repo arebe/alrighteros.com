@@ -31,6 +31,8 @@
 	  <!-- Menu for those who are logged in -->
 		<?php if($user): ?>
 			<li><a href='/users/profile/<?=$user->user_id?>'>My Profile</a></li>
+			<li><a href='/quizzes/view'>Quizzes</a></li>
+			<li><a href='/users/upgrade'>UPGRADE</a></li>
 			<li><a href='/users/logout'>Log out</a></li>
 			<?php else: ?>
 			<!-- Menu options for everyone else -->

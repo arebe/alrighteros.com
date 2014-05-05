@@ -92,6 +92,14 @@ article{
 	clear: both;
 }
 
+article.quiz{
+	background-color:#ffffff;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	text-align: center;
+
+}
+
 /* Classes */
 .error{
 	color: red;
@@ -151,7 +159,7 @@ h1.posts_index{
 }
 
 span.post_user{
-	color:  #bf8040;
+	color:  #e9aca0;
 }
 
 div.posts_box{
