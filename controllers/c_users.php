@@ -170,4 +170,31 @@ class users_controller extends base_controller {
 	  Router::redirect('/users/profile/'.$this->user->user_id);
     }
 
+    public function chat($error = NULL) {
+
+        # Setup view
+            $this->template->content = View::instance('v_users_chat');
+            $this->template->title   = "Chat with Virtual Companion";
+			$this->template->content->error = $error;
+
+        # Render template
+            echo $this->template;
+
+    }
+	public function p_chat(){
+	  Router::redirect('/users/warning/'.$this->user->user_id);
+    }
+
+    public function warning($error = NULL) {
+
+        # Setup view
+            $this->template->content = View::instance('v_users_warning');
+            $this->template->title   = "WHOOPS";
+			$this->template->content->error = $error;
+
+        # Render template
+            echo $this->template;
+
+    }
+
 } # eoc
