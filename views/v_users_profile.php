@@ -1,5 +1,15 @@
-<h1>This is the profile for <span class="post_user"><?=$user_name?> </span></h1>
-<img src=<?=$profile_pic?>  width='150'>
+<h1>Here's your profile, <span class="post_user"><?=$user_name?> </span></h1>
+
+
+<div class="rt">
+<form method = 'POST' action = '/users/edit' class='<?=$edit_profile?> rt'>
+
+	<input type = 'submit' value = 'Edit profile'>
+</form>
+</div><br><br>
+<div class="profile_box">
+<img src=<?=$profile_pic?> class = "profile_pic"> <br>
+
 <br><br>
 
 My self-summary: <br>
@@ -37,8 +47,5 @@ My birthday: <br>
 I live in this country: <br>
 <div class="user_info"><?=$country?></div>
 <br><br>
+</div>
 
-
-<form method = 'POST' action = '/users/edit' class='<?=$edit_profile?>'>
-	<input type = 'submit' value = 'Edit profile'>
-</form>

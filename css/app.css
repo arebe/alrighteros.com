@@ -93,8 +93,7 @@ article{
 }
 
 article.quiz{
-	background-color:#ffffff;
-	background-opacity:0.8;
+	background-color:rgba(255,255,255,0.8);
 	filter:alpha(opacity=80); /* For IE8 and earlier */
 	text-align: center;
 
@@ -153,6 +152,15 @@ span.new{
 	color: red;
 }
 
+div.fixed{
+	position: fixed;
+}
+
+div.rt{
+	float: right;
+	display: block;
+}
+
 /* posts_index page */
 h1.posts_index{
 	font-size: 14pt;
@@ -196,19 +204,7 @@ div.posts_view time{
 	margin: 1em 1.5em;
 }
 
-span.comment_user{
-	color:  #bf8040;
-}
 
-div.comment_box{
-	width: 750px;
-	height: 100px;
-	margin:0 auto 1em auto; 
-	background-color:#2b2834;
-	border: dotted #001A33  0.2px;
-	opacity:0.8;
-	filter:alpha(opacity=80); /* For IE8 and earlier */
-}
 
 /* users_profile page */
 #profile_posts{
@@ -218,12 +214,12 @@ div.comment_box{
 	position: relative;
 }
 
-div.profile_posts_box{
-	width: 320px;
-	height: 140px;
-	background-color:#2b2834;
-	border: dotted #001A33  0.2px;
-	opacity:0.8;
+div.profile_box{
+	width: 90%;
+	margin: 10px 50px;
+	margin-bottom: 75px;
+	padding: 20px 20px;
+	background-color:rgba(2, 2, 6, 0.8);
 	filter:alpha(opacity=80); /* For IE8 and earlier */
 }
 
@@ -243,3 +239,10 @@ form.display_button{
 form.no_button{
 	display: none;
 }
+
+.profile_pic{
+	float: right;
+	margin: 10px 20px;
+	display: block;
+}
+

@@ -18,6 +18,6 @@ For more features including blah blah blah...
     <input type='text' name='sec_code'>
     <br><br>
 
-    <div id='submit_button'><input type='submit' value='Sign up'></div>
+    <div id='submit_button'><input type='submit' value='Upgrade!'></div>
 
 </form>
