@@ -94,7 +94,7 @@ article{
 
 article.quiz{
 	background-color:#ffffff;
-	opacity:0.8;
+	background-opacity:0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
 	text-align: center;
 
@@ -136,7 +136,7 @@ article.landing{
 }
 
 div.welcomebox{
-	width: 600px;
+	width: 90%;
 	height:230px;
 	margin: 30px 50px 75px;
 	background-color:#ffffff;
@@ -225,6 +225,10 @@ div.profile_posts_box{
 	border: dotted #001A33  0.2px;
 	opacity:0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+div.user_info{
+	color:  #e9aca0;
 }
 
 div.profile_posts_thumbnail{

@@ -108,6 +108,15 @@ class users_controller extends base_controller {
 	  $this->template->content = View::instance('v_users_profile');
 	  $this->template->content->user_name = $profile_user['user_name'];
 	  $this->template->content->profile_pic = $profile_pic;
+	  $this->template->content->self_sum = $profile_user['self_sum'];
+	  $this->template->content->doing_life = $profile_user['doing_life'];
+	  $this->template->content->good_at = $profile_user['good_at'];
+	  $this->template->content->favorite_things = $profile_user['favorite_things'];
+	  $this->template->content->friday_night = $profile_user['friday_night'];
+	  $this->template->content->private_thing = $profile_user['private_thing'];
+	  $this->template->content->companion_traits = $profile_user['companion_traits'];
+	  $this->template->content->dob = $profile_user['dob'];
+	  $this->template->content->country = $profile_user['country'];
 	  $this->template->title = "Profile of ".$profile_user['user_name'];
 
 	  // if this is the profile for the logged in user, show "edit profile" button
@@ -140,12 +149,59 @@ class users_controller extends base_controller {
 	}
 
 	public function p_update(){
-	  // update first name, if one is entered
+	  // Sanitize user entered data
+	  $_POST = DB::instance(DB_NAME)->sanitize($_POST);
+	  // self-summary
+	  if($_POST['self_sum']):
+		$data = Array("self_sum" => $_POST['self_sum']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+	  // What I’m doing with my life - doing_life
+	  if($_POST['doing_life']):
+		$data = Array("doing_life" => $_POST['doing_life']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+      // I’m really good at - good_at
+      if($_POST['good_at']):
+		$data = Array("good_at" => $_POST['good_at']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+	  // Favorite movies, books, food  - favorite_things
+	  if($_POST['favorite_things']):
+		$data = Array("favorite_things" => $_POST['favorite_things']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+	  // On a typical Friday night I am usually…  - friday_night
+	  if($_POST['friday_night']):
+		$data = Array("friday_night" => $_POST['friday_night']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+	  // The most private thing I’m willing to admit  - private_thing
+	  if($_POST['private_thing']):
+		$data = Array("private_thing" => $_POST['private_thing']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+	  // In a companion, I’m looking for…  - companion_traits
+	  if($_POST['companion_traits']):
+		$data = Array("companion_traits" => $_POST['companion_traits']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+
+      //DOB  - dob
+      if($_POST['dob']):
+		$data = Array("dob" => $_POST['dob']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+	  // Country - country
+	  if($_POST['country']):
+		$data = Array("country" => $_POST['country']);
+		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
+	  endif;
+	  // update email
 	  if($_POST['email']):
 		$data = Array("email" => $_POST['email']);
 		DB::instance(DB_NAME)->update("users", $data, "WHERE user_id = '".$this->user->user_id."'");
 	  endif;
-
 	  // update password, if one is entered
 	  if($_POST['password']):
 		$_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);

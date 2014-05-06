@@ -8,7 +8,7 @@
 
    <?php if($error=="duplicate"): ?>
 		<div class='error'>
-		   Sign up failed. Someone has already registered that email address.
+		   Sign up failed. Someone has already registered that username or email address.
 		</div>
 		<br>
    <?php endif; ?>

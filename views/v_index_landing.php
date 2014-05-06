@@ -6,10 +6,10 @@
 	<p><span class="new">Get started!</span>
 	<ul>
 		<li>SIGN UP for an account</li>
-		<li>UPGRADE for extra features - including annonymous mode!</li>
+		<li>UPGRADE for extra features - including interactive video mode!</li>
 	    <li>Fill out your PROFILE page</li>
 		<li>Take QUIZES to increase your match score</li>
-	    <li>FIND LOCAL SINGLES that perfectly correspond to your preferences</li>
+	    <li>LIVE CHAT with your perfectly-callibrated virtual companion.</li>
 	</ul>
 	</div>
 	</div>
