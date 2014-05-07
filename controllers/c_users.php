@@ -50,7 +50,7 @@ class users_controller extends base_controller {
 	  elseif($_POST['gender_pref']==="feminine"):
 	  	$_POST['companion_pic'] = "/uploads/avatars/gal_companion.jpg";
 	  else:
-	  	$_POST['companion_pic'] = "uploads/avatars/companion.png";
+	  	$_POST['companion_pic'] = "/uploads/avatars/companion.png";
 	  endif;
 	  $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
 	  // automatically follow self
