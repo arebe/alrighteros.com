@@ -45,10 +45,12 @@ class users_controller extends base_controller {
 	  $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 	  $_POST['profile_pic'] = "/uploads/avatars/example.gif";
 	  $_POST['hacked_pic'] = "/uploads/avatars/YouDidntSayTheMagicWord.gif";
-	  if($_POST['gender_pref']==="male"):
+	  if($_POST['gender_pref']==="masculine"):
 	  	$_POST['companion_pic'] = "/uploads/avatars/guy_companion.png";
-	  else:
+	  elseif($_POST['gender_pref']==="feminine"):
 	  	$_POST['companion_pic'] = "/uploads/avatars/gal_companion.jpg";
+	  else:
+	  	$_POST['companion_pic'] = "uploads/avatars/companion.png";
 	  endif;
 	  $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
 	  // automatically follow self

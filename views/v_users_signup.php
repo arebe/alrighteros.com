@@ -28,9 +28,10 @@
     <div id='password_error'>Please enter password (5 chars min).</div>
     <br><br>
 
-    Select a gender for your virtual companion<br>
-    <input type="radio" name="gender_pref" value="male" checked>Male<br>
-    <input type="radio" name="gender_pref" value="female">Female<br>
+    Select your preferred type of virtual companion<br>
+    <input type="radio" name="gender_pref" value="masculine" checked>Masculine<br>
+    <input type="radio" name="gender_pref" value="feminine">Feminine<br>
+    <input type="radio" name="gender_pref" value="neutral">Doesn't matter / gender-neutral<br>
     <br><br>
 
     <div id='submit_button'><input type='submit' value='Sign up'></div>
