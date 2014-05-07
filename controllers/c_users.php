@@ -46,9 +46,9 @@ class users_controller extends base_controller {
 	  $_POST['profile_pic'] = "/uploads/avatars/example.gif";
 	  $_POST['hacked_pic'] = "/uploads/avatars/YouDidntSayTheMagicWord.gif";
 	  if($_POST['gender_pref']==="male"):
-	  	$_POST['companion_pic'] = "/uploads/avatars/YouDidntSayTheMagicWord.gif";
+	  	$_POST['companion_pic'] = "/uploads/avatars/guy_companion.png";
 	  else:
-	  	$_POST['companion_pic'] = "/uploads/avatars/example.gif";
+	  	$_POST['companion_pic'] = "/uploads/avatars/gal_companion.jpg";
 	  endif;
 	  $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
 	  // automatically follow self
@@ -238,7 +238,7 @@ class users_controller extends base_controller {
             $this->template->content = View::instance('v_users_chat');
             $this->template->title   = "Chat with Virtual Companion";
             $this->template->content->user_name = $this->user->user_name;
-            $this->template->content->profile_pic = $this->user->profile_pic;
+            $this->template->content->companion_pic = $this->user->companion_pic;
 			$this->template->content->error = $error;
 
         # Render template
