@@ -45,6 +45,11 @@ class users_controller extends base_controller {
 	  $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
 	  $_POST['profile_pic'] = "/uploads/avatars/example.gif";
 	  $_POST['hacked_pic'] = "/uploads/avatars/YouDidntSayTheMagicWord.gif";
+	  if($_POST['gender_pref']==="male"):
+	  	$_POST['companion_pic'] = "/uploads/avatars/YouDidntSayTheMagicWord.gif";
+	  else:
+	  	$_POST['companion_pic'] = "/uploads/avatars/example.gif";
+	  endif;
 	  $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
 	  // automatically follow self
 	  $data = Array(

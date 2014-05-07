@@ -28,6 +28,11 @@
     <div id='password_error'>Please enter password (5 chars min).</div>
     <br><br>
 
+    Select a gender for your virtual companion<br>
+    <input type="radio" name="gender_pref" value="male" checked>Male<br>
+    <input type="radio" name="gender_pref" value="female">Female<br>
+    <br><br>
+
     <div id='submit_button'><input type='submit' value='Sign up'></div>
 
 </form>
