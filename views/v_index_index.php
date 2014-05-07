@@ -3,9 +3,9 @@
 	<h4 class="landing">where everyday people find romance</h4>
 	<p><span class="new">Get started!</span>
 	<ul>
-		<li>UPGRADE for extra features - including annonymous mode!</li>
-	    <li>Fill out your PROFILE page</li>
-		<li>Take QUIZES to increase your match score</li>
-	    <li>LIVE CHAT with your perfectly-callibrated virtual companion.</li>
+		<li>Fill out your <a href='/users/profile/<?=$user->user_id?>'>PROFILE</a> page</li>
+		<li>Take <a href='/quizzes/view'>QUIZZES</a> to increase your match score</li>
+		<li><a href='/users/upgrade'>UPGRADE</a> for extra features - including interactive video mode!</li>
+	    <li><a href='/users/chat'>LIVE CHAT</a> with your perfectly-callibrated virtual companion.</li>
 	</ul>
 	</div>

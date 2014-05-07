@@ -7,8 +7,8 @@
 	<ul>
 		<li><a href='/users/signup'>SIGN UP</a> for an account</li>
 		<li>Fill out your PROFILE page</li>
-		<li>UPGRADE for extra features - including interactive video mode!</li>
 		<li>Take QUIZZES to increase your match score</li>
+		<li>UPGRADE for extra features - including interactive video mode!</li>
 	    <li>LIVE CHAT with your perfectly-callibrated virtual companion.</li>
 	</ul>
 	</div>
