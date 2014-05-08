@@ -1,4 +1,4 @@
-<h1>Here's your profile, <span class="post_user"><?=$user_name?> </span></h1>
+<h2>Here's your profile, <span class="post_user"><?=$user_name?> </span></h2>
 
 
 <br><br>

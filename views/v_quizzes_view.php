@@ -1,4 +1,4 @@
-<h1>Take quizzes!</h1>
+<h2>Take quizzes!</h2>
 Your virtual companion wants to get to know you. Take these quizzes as an "ice-breaker." Your companion will provide an optimal experience if they know just want you like.
 
 <!-- Are you a cat or a dog person -->

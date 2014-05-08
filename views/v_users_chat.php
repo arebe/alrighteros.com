@@ -1,4 +1,4 @@
-<h1>Hello <span class="post_user"><?=$user_name?> </span></h1>
+<h2>Hello <span class="post_user"><?=$user_name?> </span></h2>
 <div class = "chat_box">
 <div class="rt">
 	<img src=<?=$companion_pic?> class="companion_pic">

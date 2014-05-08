@@ -1,5 +1,5 @@
 
-<h1>YOU'VE BEEN HACKED, <span class="post_user"><?=$user_name?> </span>!!!</h1>
+<h2>YOU'VE BEEN HACKED, <span class="post_user"><?=$user_name?> </span>!!!</h2>
 
 <div class="profile_box">
 <div class="rt">

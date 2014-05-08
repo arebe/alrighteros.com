@@ -1,4 +1,4 @@
-<h1>You've been Hacked!</h1>
+<h2>You've been Hacked!</h2>
 <br>
 <div class="edit_profile_box">
 In one of the biggest password leaks on record, hackers
