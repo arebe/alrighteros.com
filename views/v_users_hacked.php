@@ -1,16 +1,19 @@
 
 <h1>YOU'VE BEEN HACKED, <span class="post_user"><?=$user_name?> </span>!!!</h1>
 
-
-<div class="rt">
-<form method = 'POST' action = '/users/p_hacked' >
-	<input type = 'submit' value = 'HELP!!'>
-</form>
-</div><br><br>
 <div class="profile_box">
-<img src=<?=$hacked_pic?>  class = "profile_pic"> <br>
+<div class="rt">
+	<div class="profile_pic">
+	<img src=<?=$hacked_pic?>  >
+</div>
 
-<br><br>
+	<div class="profile_post">
+	<form method = 'POST' action = '/users/p_hacked' class='<?=$edit_profile?> rt'>
+		<input type = 'submit' value = 'HELP!!'>   
+	</form>
+</div>
+
+</div>
 
 My self-summary: <br>
 <div class="user_info">YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD YOU DIDNT SAY THE MAGIC WORD</div>

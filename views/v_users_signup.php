@@ -1,4 +1,10 @@
 <form method='POST' action='/users/p_signup'>
+    Select your preferred virtual companion<br>
+    <input type="radio" name="gender_pref" value="masculine" checked>Dude<br>
+    <input type="radio" name="gender_pref" value="feminine">Lady<br>
+    <input type="radio" name="gender_pref" value="neutral">Doesn't matter<br>
+    <br><br>
+
    <?php if($error=="blank"): ?>
 		<div class='error'>
 		   Sign up failed. Please supply a valid user name, email, and password.
@@ -26,12 +32,6 @@
     Password<br>
     <input type='password' name='password'>
     <div id='password_error'>Please enter password (5 chars min).</div>
-    <br><br>
-
-    Select your preferred virtual companion<br>
-    <input type="radio" name="gender_pref" value="masculine" checked>Dude<br>
-    <input type="radio" name="gender_pref" value="feminine">Lady<br>
-    <input type="radio" name="gender_pref" value="neutral">Doesn't matter<br>
     <br><br>
 
     <div id='submit_button'><input type='submit' value='Sign up'></div>

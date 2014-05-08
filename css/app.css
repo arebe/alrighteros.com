@@ -262,3 +262,19 @@ div.edit_profile_box{
 	width: 70%;
 	height: 4em;
 }
+
+/* user_chat page */
+div.chat_box{
+	width: 90%;
+	margin: 10px 50px;
+	margin-bottom: 75px;
+	padding: 20px 20px;
+	background-color:rgba(2, 2, 6, 0.8);
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.companion_pic{
+	width: 150px;
+	border-width: 5px;
+	border-color:rgba(2, 2, 6, 0.8);
+}

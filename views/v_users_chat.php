@@ -1,11 +1,24 @@
 <h1>Hello <span class="post_user"><?=$user_name?> </span></h1>
-<img src=<?=$companion_pic?>  width='150'>
+<div class = "chat_box">
+<div class="rt">
+	<img src=<?=$companion_pic?> class="companion_pic">
+</div>
+<div class="chat_text">
+Your virtual companion has read all about you!
+<br><br>
 
-Your virtual companion had read all about you!
+Maybe you'd like to break the ice? 
 
-Click below to start a chat seesion.
+<br><br>
+<span class="post_user"><?=$user_name?> </span>, tell me more about...<br>
+<?=$private_thing?><br>
+
+<br><br>
+Click below to start a chat session.
 
 
 <form method = 'POST' action = '/users/p_chat'>
 	<input type = 'submit' value = 'Chat Now!'>
 </form>
+</div>
+</div>

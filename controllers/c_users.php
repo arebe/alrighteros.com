@@ -241,6 +241,7 @@ class users_controller extends base_controller {
             $this->template->title   = "Chat with Virtual Companion";
             $this->template->content->user_name = $this->user->user_name;
             $this->template->content->companion_pic = $this->user->companion_pic;
+            $this->template->content->private_thing = $this->user->private_thing;
 			$this->template->content->error = $error;
 
         # Render template
