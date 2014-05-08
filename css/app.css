@@ -1,11 +1,5 @@
 @charset "utf-8";
 /* css for the main app */
-body{
-	margin: 0 auto 1em auto;
-	padding: 0 20px;
-	background-color: #000000;
-	background-image:url('../images/eros_sil.jpg');
-}
 
 header {
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
@@ -21,6 +15,9 @@ header h1, h2 {
 	margin: 0.8em 0.2em;
 }
 body {
+	padding: 0 20px;
+	background-color: #000000;
+	background-image:url('../images/eros_sil.jpg');
 	background-color: #2D2C30;
 	font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 	color: #C0C0C0;
@@ -159,7 +156,7 @@ div.fixed{
 
 div.rt{
 	float: right;
-	display: block;
+	display: inline-block;
 }
 
 /* posts_index page */
@@ -242,8 +239,26 @@ form.no_button{
 }
 
 .profile_pic{
-	float: right;
+/*	float: right;*/
 	margin: 10px 20px;
-	display: block;
+	display: inline-block;
 }
 
+.profile_post{
+
+}
+
+/* users_edit page*/
+div.edit_profile_box{
+	width: 90%;
+	margin: 10px 50px;
+	margin-bottom: 5px;
+	padding: 20px 20px;
+	background-color:rgba(132, 0, 36, 0.8);
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+.profile_input{
+	width: 70%;
+	height: 4em;
+}

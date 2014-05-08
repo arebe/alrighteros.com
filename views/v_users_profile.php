@@ -1,14 +1,21 @@
 <h1>Here's your profile, <span class="post_user"><?=$user_name?> </span></h1>
 
 
-<div class="rt">
-<form method = 'POST' action = '/users/edit' class='<?=$edit_profile?> rt'>
+<br><br>
 
-	<input type = 'submit' value = 'Edit profile'>
-</form>
-</div><br><br>
 <div class="profile_box">
-<img src=<?=$profile_pic?> class = "profile_pic"> <br>
+<div class="rt">
+	<div class="profile_pic">
+	<img src=<?=$profile_pic?> >
+</div>
+
+	<div class="profile_post">
+	<form method = 'POST' action = '/users/edit' class='<?=$edit_profile?> rt'>
+		<input type = 'submit' value = 'Edit profile'>   
+	</form>
+</div>
+
+</div>
 
 <br><br>
 
