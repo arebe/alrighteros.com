@@ -1,5 +1,16 @@
 <h2>Upgrade your account!</h2>
-For more features including blah blah blah...
+<div class="fields_box">
+<div class="rt">
+For more features including access to...
+<ul>
+    <li>My Facebook page</li>
+    <li>My Twitter feed</li>
+    <li>My email </li>
+    <li>My cellphone for text-enabled chats on the go</li>
+    <li>Annonymous mode</li>
+    <li>...and so much more!</li>
+</ul>
+</div>
 
 <form method='POST' action='/users/p_upgrade'>
     Name on Card<br>
@@ -21,3 +32,4 @@ For more features including blah blah blah...
     <div id='submit_button'><input type='submit' value='Upgrade!'></div>
 
 </form>
+</div>

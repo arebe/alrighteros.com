@@ -167,7 +167,7 @@ div.rt{
 
 div.splash_videos{
 	width: 1100px;
-	height: 350px;
+	height: 370px;
 	margin: 0px 50px;
 	margin-bottom: 5px;
 	padding: 5px 5px;
@@ -200,10 +200,21 @@ div.fields_box{
 	height: 380px;
 	padding-top: 10px;
 	margin-top: 15px;
-	background-color:#2b2834;
+	background-color:rgba(43, 40, 52, 0.8);
 	border: dotted #001A33  0.2px;
-	opacity:0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+
+div.fields_box p, ul{
+	margin: 1em;
+	color: #C0C0C0;
+	list-style-type: none;
+}
+
+div.fields_box li:before{
+	content: '\29D0';
+	margin: 0 0.5em 0 0;
 }
 
 /* posts_index page */
