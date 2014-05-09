@@ -29,7 +29,7 @@
 <nav>
 	<ul>
 	  <!-- Menu for those who are logged in -->
-	  <li><a href="/"><img src="/images/home.jpg"></a></li>
+	  <li><a href="/"><img src="/images/Home.jpg"></a></li>
 		<?php if($user): ?>
 			<li><a href='/users/profile/<?=$user->user_id?>'><img src="/images/myprofile.png"></a></li>
 			<li><a href='/quizzes/view'><img src="/images/Quizzes.png"></a></li>
