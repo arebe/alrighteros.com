@@ -6,7 +6,7 @@
 <div class="profile_box">
 <div class="rt">
 	<div class="profile_pic">
-	<img src=<?=$profile_pic?> >
+	<img src=<?=$profile_pic?> width=150>
 </div>
 
 	<div class="profile_post">

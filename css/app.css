@@ -129,7 +129,7 @@ h4.landing{
 article.landing{
 	background-size: 900px 600px;
 	width: 900px;
-	height: 300px;
+/*	height: 500px;*/
 }
 
 div.welcomebox{
@@ -157,6 +157,25 @@ div.fixed{
 div.rt{
 	float: right;
 	display: inline-block;
+}
+
+div.splash_videos{
+	width: 90%;
+	height: 350px;
+	margin: 10px 50px;
+	margin-bottom: 5px;
+	padding: 5px 5px;
+	background-color:rgba(132, 0, 36, 0.8);
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+	text-align: center;
+}
+
+div.adam{
+	float: left;
+}
+
+div.eve{
+	float: right;
 }
 
 /* posts_index page */

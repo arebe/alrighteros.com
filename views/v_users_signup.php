@@ -1,7 +1,7 @@
 <form method='POST' action='/users/p_signup'>
     Select your preferred virtual companion<br>
-    <input type="radio" name="gender_pref" value="masculine" checked>Dude<br>
-    <input type="radio" name="gender_pref" value="feminine">Lady<br>
+    <input type="radio" name="gender_pref" value="masculine" checked>Adam<br>
+    <input type="radio" name="gender_pref" value="feminine">Eve<br>
     <input type="radio" name="gender_pref" value="neutral">Doesn't matter<br>
     <br><br>
 

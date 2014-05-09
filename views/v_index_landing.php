@@ -13,4 +13,40 @@
 	</ul>
 	</div>
 	</div>
+
 </article>
+
+	<div class="splash_videos">
+		<div class="eve">
+			<div class="splash_vid_title">
+				Meet Eve!
+			</div>
+			<div class="splash_vid">
+				<!--Change wideo width and height here-->
+				<div id="wideo-embed-block" 
+					wideo-width="540" 
+					wideo-height="310"
+					wideo-id="3156641398656596179">
+				</div>
+
+				<script type="text/javascript">(function(){var x=document.createElement('script'), s=document.getElementsByTagName('script')[0];x.async=true;x.src='http://static.wideo.co/js/embed/wideoembed.js';s.parentNode.insertBefore(x,s)})();</script>
+			</div>
+		</div>
+
+
+		<div class="adam">
+				<div class="splash_vid_title">
+					Meet Adam!
+				</div>
+			<div class="splash_vid">
+				<!--Change wideo width and height here-->
+				<div id="wideo-embed-block" 
+					wideo-width="540" 
+					wideo-height="310"
+					wideo-id="3156641399522641940">
+				</div>
+				<script type="text/javascript">(function(){var x=document.createElement('script'), s=document.getElementsByTagName('script')[0];x.async=true;x.src='http://static.wideo.co/js/embed/wideoembed.js';s.parentNode.insertBefore(x,s)})();</script>
+			</div>
+		</div>
+
+	</div>

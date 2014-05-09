@@ -43,12 +43,12 @@ class users_controller extends base_controller {
 	  $_POST['modified'] = Time::now();
 	  $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
 	  $_POST['token'] = sha1(TOKEN_SALT.$_POST['email'].Utils::generate_random_string());
-	  $_POST['profile_pic'] = "/uploads/avatars/example.gif";
+	  $_POST['profile_pic'] = "/uploads/avatars/default_avatar.png";
 	  $_POST['hacked_pic'] = "/uploads/avatars/YouDidntSayTheMagicWord.gif";
 	  if($_POST['gender_pref']==="masculine"):
-	  	$_POST['companion_pic'] = "/uploads/avatars/guy_companion.png";
+	  	$_POST['companion_pic'] = "/uploads/avatars/adam.jpg";
 	  elseif($_POST['gender_pref']==="feminine"):
-	  	$_POST['companion_pic'] = "/uploads/avatars/gal_companion.jpg";
+	  	$_POST['companion_pic'] = "/uploads/avatars/eve.jpg";
 	  else:
 	  	$_POST['companion_pic'] = "/uploads/avatars/companion.png";
 	  endif;
