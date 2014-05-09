@@ -34,7 +34,7 @@
 			<li><a href='/users/profile/<?=$user->user_id?>'><img src="/images/myprofile.png"></a></li>
 			<li><a href='/quizzes/view'><img src="/images/Quizzes.png"></a></li>
 			<li><a href='/users/upgrade'><img src="/images/Upgrade.jpg"></a></li>
-			<li><a href='/users/chat'><img src="/images/Chat.png"></a></li>
+			<li><a href='/users/chat'><img src="/images/Chat0.png"></a></li>
 			<li><a href='/users/logout'><img src="/images/LogOut.png"></a></li>
 			<?php else: ?>
 			<!-- Menu options for everyone else -->
