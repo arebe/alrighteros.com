@@ -53,7 +53,7 @@ a:hover {color:#7A3DB8}
 header a:hover{color: #6699CC}
 aside h3 {letter-spacing:normal}
 nav {
-	margin: 0.5em auto;
+	margin: 0.5em auto 0.5em auto;
 	width: 900px;
 	backgroud-color: #000000;
 }
@@ -134,8 +134,8 @@ article.landing{
 
 div.welcomebox{
 	width: 90%;
-	height:230px;
-	margin: 30px 50px 75px;
+	height:190px;
+	margin: 15px auto -10px 100px;
 	background-color:#ffffff;
 	opacity:0.8;
 	filter:alpha(opacity=80); /* For IE8 and earlier */
@@ -144,6 +144,12 @@ div.welcomebox{
 div.welcomebox p, ul{
 	margin: 1em;
 	color: #000000;
+	list-style-type: none;
+}
+
+div.welcomebox li:before{
+	content: '\29D0';
+	margin: 0 0.5em 0 0;
 }
 
 span.new{
@@ -160,14 +166,15 @@ div.rt{
 }
 
 div.splash_videos{
-	width: 90%;
+	width: 1100px;
 	height: 350px;
-	margin: 10px 50px;
+	margin: 0px 50px;
 	margin-bottom: 5px;
 	padding: 5px 5px;
 	background-color:rgba(132, 0, 36, 0.8);
 	filter:alpha(opacity=80); /* For IE8 and earlier */
 	text-align: center;
+	position: relative;
 }
 
 div.adam{
@@ -176,6 +183,27 @@ div.adam{
 
 div.eve{
 	float: right;
+	padding-left: 1em;
+
+}
+
+div.splash_vid_title{
+	background-color:#2b2834;
+	border: dotted #001A33  0.2px;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
+}
+
+/* sign up & log in pages */
+div.fields_box{
+	width: 900px;
+	height: 380px;
+	padding-top: 10px;
+	margin-top: 15px;
+	background-color:#2b2834;
+	border: dotted #001A33  0.2px;
+	opacity:0.8;
+	filter:alpha(opacity=80); /* For IE8 and earlier */
 }
 
 /* posts_index page */

@@ -3,7 +3,6 @@
 	<div class = "welcomebox">
 	<h1>Welcome to <?=APP_NAME?></h1>
 	<h4 class="landing">where everyday people find romance</h4>
-	<p><span class="new">Get started!</span>
 	<ul>
 		<li><a href='/users/signup'>SIGN UP</a> for an account</li>
 		<li>Fill out your PROFILE page</li>
@@ -19,7 +18,7 @@
 	<div class="splash_videos">
 		<div class="eve">
 			<div class="splash_vid_title">
-				Meet Eve!
+				<h2>Meet Eve! &nbsp</h2>
 			</div>
 			<div class="splash_vid">
 				<!--Change wideo width and height here-->
@@ -30,13 +29,14 @@
 				</div>
 
 				<script type="text/javascript">(function(){var x=document.createElement('script'), s=document.getElementsByTagName('script')[0];x.async=true;x.src='http://static.wideo.co/js/embed/wideoembed.js';s.parentNode.insertBefore(x,s)})();</script>
+		
 			</div>
 		</div>
 
 
 		<div class="adam">
 				<div class="splash_vid_title">
-					Meet Adam!
+					<h2>&nbsp Meet Adam!</h2>
 				</div>
 			<div class="splash_vid">
 				<!--Change wideo width and height here-->
@@ -46,6 +46,7 @@
 					wideo-id="3156641399522641940">
 				</div>
 				<script type="text/javascript">(function(){var x=document.createElement('script'), s=document.getElementsByTagName('script')[0];x.async=true;x.src='http://static.wideo.co/js/embed/wideoembed.js';s.parentNode.insertBefore(x,s)})();</script>
+		
 			</div>
 		</div>
 

@@ -1,3 +1,4 @@
+<div class="fields_box">
 <form method='POST' action='/users/p_signup'>
     Select your preferred virtual companion<br>
     <input type="radio" name="gender_pref" value="masculine" checked>Adam<br>
@@ -37,3 +38,4 @@
     <div id='submit_button'><input type='submit' value='Sign up'></div>
 
 </form>
+</div>
