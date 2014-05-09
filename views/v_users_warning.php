@@ -1,9 +1,9 @@
 <h2>You've been Hacked!</h2>
 <br>
 <div class="edit_profile_box">
-In one of the biggest password leaks on record, hackers
+In one of the biggest password leaks on record, <a href="http://motherboard.vice.com/en_uk/blog/hackers-leaked-42-million-plaintext-dating-site-passwords">hackers
 exposed 42 million user accounts from the online dating site
-network Cupid Media based in Australia, including names, email
+network Cupid Media based in Australia</a>, including names, email
 addresses, birthdays, and unencrypted passwords. And you'll
 never guess what the most popular passwords were. Oh wait, you
 totally will guess, because they're the most obvious passwords

@@ -31,15 +31,15 @@
 	  <!-- Menu for those who are logged in -->
 	  <li><a href="/"><img src="/images/Home.jpg"></a></li>
 		<?php if($user): ?>
-			<li><a href='/users/profile/<?=$user->user_id?>'><img src="/images/myprofile.png"></a></li>
+			<li><a href='/users/profile/<?=$user->user_id?>'><img src="/images/MyProfile.png"></a></li>
 			<li><a href='/quizzes/view'><img src="/images/Quizzes.png"></a></li>
 			<li><a href='/users/upgrade'><img src="/images/Upgrade.jpg"></a></li>
-			<li><a href='/users/chat'><img src="/images/chat.png"></a></li>
+			<li><a href='/users/chat'><img src="/images/Chat.png"></a></li>
 			<li><a href='/users/logout'><img src="/images/LogOut.png"></a></li>
 			<?php else: ?>
 			<!-- Menu options for everyone else -->
-			<li><a href='/users/signup'><img src="/images/signup.jpg"></a></li>
-			<li><a href='/users/login'><img src="/images/login.jpg"></a></li>
+			<li><a href='/users/signup'><img src="/images/SignUp.jpg"></a></li>
+			<li><a href='/users/login'><img src="/images/Login.jpg"></a></li>
 		<?php endif; ?>
 	</ul>
 </nav>
