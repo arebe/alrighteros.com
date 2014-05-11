@@ -1,9 +1,12 @@
 <h2>You've been Hacked!</h2>
 <br>
 <div class="edit_profile_box">
+
 <h3>Did you really need to save your credit card information?</h3>
 
-
+	<div class="rt">
+		<img src="/images/creditcards.jpg" width="200" alt="http://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Credit-cards.jpg/640px-Credit-cards.jpg">
+	</div>
 You’re making a purchase at awesomecheapstuff.com and the website offers the ability to create an account and save your credit card information for faster check-out later. <br>
 <br>
 
@@ -11,7 +14,9 @@ This might seem like a great idea, but perhaps you should consider the trustwort
 <br>
 
 <h3>Have you traded the security of your personal data for the convenience of a single log-in?</h3>
-
+	<div class="lt">
+		<img src="/images/facebook.jpg" width="200" alt="http://pixabay.com/static/uploads/photo/2013/06/24/09/39/facebook-140903_640.jpg">
+	</div>
 
 Increasingly, websites ask you to create a log in for even the most mundane services. Social log-in applications allow web surfers to log into multiple sites using the same credentials as a widely-used social media site, like Facebook.<br>
 <br>
@@ -20,6 +25,10 @@ However, these same social medias sites have put restrictions on their user base
 <br>
 
 <h3>Are you using the same password across multiple sites?</h3>
+
+	<div class="rt">
+		<img src="/images/heartbleed.png" width="200" alt="http://openclipart.org/image/300px/svg_to_png/192604/Heartbleed-Patch-Needed.png">
+	</div>
 
 The recent Heartbleed bug potentially enabled attackers to intercept a “grab bag” of web server data - the contents of which could have included user names and passwords. While the bug did not affect most financial institutions, <a href="http://mashable.com/2014/04/09/heartbleed-bug-websites-affected/">security professionals recommend changing your password</a> on any accounts that might have shared the same password with services that were affected.<br>
 <br>

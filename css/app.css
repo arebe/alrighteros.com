@@ -162,6 +162,13 @@ div.fixed{
 div.rt{
 	float: right;
 	display: inline-block;
+	margin: 0.4em;
+}
+
+div.lt{
+	float: left;
+	display: inline-block;
+	margin: 0.4em;
 }
 
 div.splash_videos{
