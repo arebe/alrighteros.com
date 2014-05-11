@@ -39,7 +39,7 @@
 			<?php else: ?>
 			<!-- Menu options for everyone else -->
 			<li><a href='/users/signup'><img src="/images/signup.jpg"></a></li>
-			<li><a href='/users/login'><img src="/images/Login.jpg"></a></li>
+			<li><a href='/users/login'><img src="/images/login.jpg"></a></li>
 		<?php endif; ?>
 	</ul>
 </nav>
